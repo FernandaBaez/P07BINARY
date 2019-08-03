@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drag_layer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BBB9B9">
+
+    <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/Validar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickValidar"
+            android:background="@color/colorPrimary"
+            android:text="Validar"
+            />
+        <TextView
+            android:id="@+id/Numero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="246"
+            android:textColor="#000"
+            android:background="#F6D556"
+            android:textSize="40dp"
+            android:textAlignment="center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1.0"
+        android:layout_marginTop="50dp"
+        >
+
+    <GridView
+    android:id="@+id/image_grid_view"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:numColumns="1"
+    android:verticalSpacing="@dimen/grid_cell_spacing"
+    android:horizontalSpacing="@dimen/grid_cell_spacing"
+    android:stretchMode="columnWidth"
+    android:gravity="center"
+    android:layout_weight="3"
+    android:background="@color/grid_background"/>
+
+<LinearLayout 
+   android:id="@+id/bottom_part"
+   android:orientation="vertical"
+   android:layout_centerHorizontal="true"
+   android:layout_width="match_parent" 
+   android:layout_height="match_parent"
+   android:layout_weight="0.2"
+   android:weightSum="1.0"
+   >
+<!--<com.upvictoria.dispositivos_moviles_may_ago_2019.p07_molina_pastrana_ana_karen.DeleteZone
+    android:id="@+id/delete_zone_view"
+    android:layout_width="@dimen/delete_zone_size" 
+    android:layout_height="@dimen/delete_zone_size" 
+    android:padding="@dimen/delete_zone_padding" 
+    android:layout_gravity="center"
+    android:src="@drawable/delete_zone"
+    
+/>-->
+    <LinearLayout
+        android:paddingTop="50dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/image_source_frame_1"
+        android:layout_weight="0.5"
+        android:layout_width="@dimen/add_image_width"
+        android:layout_height="@dimen/add_image_height"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/image_source_frame_2"
+        android:layout_weight="0.5"
+        android:layout_width="@dimen/add_image_width"
+        android:layout_height="@dimen/add_image_height"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/image_source_frame_3"
+        android:layout_weight="0.5"
+        android:layout_width="@dimen/add_image_width"
+        android:layout_height="@dimen/add_image_height"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            />
+    </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <FrameLayout
+            android:id="@+id/image_source_frame_4"
+            android:layout_weight="0.5"
+            android:layout_width="@dimen/add_image_width"
+            android:layout_height="@dimen/add_image_height"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/image_source_frame_5"
+            android:layout_weight="0.5"
+            android:layout_width="@dimen/add_image_width"
+            android:layout_height="@dimen/add_image_height"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/image_source_frame_6"
+            android:layout_weight="0.5"
+            android:layout_width="@dimen/add_image_width"
+            android:layout_height="@dimen/add_image_height"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                />
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/image_source_frame_7"
+            android:layout_weight="0.5"
+            android:layout_width="@dimen/add_image_width"
+            android:layout_height="@dimen/add_image_height"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                />
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/image_source_frame_8"
+            android:layout_weight="0.5"
+            android:layout_width="@dimen/add_image_width"
+            android:layout_height="@dimen/add_image_height"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                />
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/image_source_frame_9"
+            android:layout_weight="0.5"
+            android:layout_width="@dimen/add_image_width"
+            android:layout_height="@dimen/add_image_height"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/image_source_frame_10"
+            android:layout_weight="0.5"
+            android:layout_width="@dimen/add_image_width"
+            android:layout_height="@dimen/add_image_height"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                />
+        </FrameLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="30dp"
+        >
+        <Button
+            android:id="@+id/Salir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickAddImage"
+            android:layout_alignParentRight="true"
+            android:background="@color/colorButtonSalir"
+            android:text="Salir" />
+        <Button
+            android:id="@+id/Ayuda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickAyuda"
+            android:layout_alignParentLeft="true"
+            android:background="@color/colorButton"
+            android:text="Ayuda" />
+    </RelativeLayout>
+</LinearLayout>
+</LinearLayout>
+
+</LinearLayout>
+</FrameLayout>

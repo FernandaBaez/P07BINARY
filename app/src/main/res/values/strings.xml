@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="instructions">Add an image. Then press on image to drag it. Drop it on the grid.</string>
+    <string name="hello">Add an image. Then drag it onto the grid.</string>
+    <string name="app_name">Bin/Ary</string>
+    <string name="siguiente_numero">Siguiente Número</string>
+    <integer name="num_images">5</integer>
+    <integer name="num_columns">10</integer>
+</resources>
